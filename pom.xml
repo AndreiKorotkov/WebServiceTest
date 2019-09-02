@@ -28,7 +28,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            TestNG.xml
+                            src/test/java/TestNG.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
