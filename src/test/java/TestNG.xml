@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="methods" thread-count="3">
+<test name="webServiceTest">
+    <classes>
+        <class name="TestClass"></class>
+    </classes>
+</test> <!-- calculatorTest -->
+</suite> <!-- Default Suite -->
