@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestClass {
 
     @BeforeClass
-    public void setup()  {
+    public void setup() {
         RestAssured.baseURI = "http://jsonplaceholder.typicode.com";
     }
 
@@ -20,7 +20,7 @@ public class TestClass {
     }
 
     @Test
-    public void webHeaderTest () {
+    public void webHeaderTest() {
         Response response = RestAssured.when()
                 .get("/users")
                 .andReturn();
@@ -30,11 +30,11 @@ public class TestClass {
     }
 
     @Test
-    public void webBodyTest () {
+    public void webBodyTest() {
         Response response = RestAssured.when()
                 .get("/users")
                 .andReturn();
-        User [] users = response.getBody().as(User[].class);
+        User[] users = response.getBody().as(User[].class);
         Assert.assertEquals(users.length, 10);
     }
 }
